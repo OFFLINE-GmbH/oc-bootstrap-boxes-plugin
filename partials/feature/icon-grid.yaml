@@ -1,0 +1,24 @@
+handle: bs-feature-icon-grid
+name: offline.bootstrapboxes::lang.feature.icon_grid
+section: offline.bootstrapboxes::lang.feature.section
+form:
+    tabs:
+        fields:
+            features:
+                label: offline.bootstrapboxes::lang.feature.features
+                type: repeater
+                tab: offline.bootstrapboxes::lang.content
+                itemsExpanded: false
+                titleFrom: title
+                form:
+                    fields:
+                        icon_name:
+                            label: offline.bootstrapboxes::lang.icon
+                            type: dropdown
+                        title:
+                            label: offline.bootstrapboxes::lang.title
+                            type: text
+                        text:
+                            label: offline.bootstrapboxes::lang.text
+                            type: textarea
+                            size: small

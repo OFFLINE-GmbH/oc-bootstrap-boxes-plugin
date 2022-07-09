@@ -1,0 +1,8 @@
+handle: bs-feature-with-icon
+name: offline.bootstrapboxes::lang.feature.with_icon
+section: offline.bootstrapboxes::lang.feature.section
+form:
+    tabs:
+        fields:
+            bs-feature-mixin:
+                type: mixin

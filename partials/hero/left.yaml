@@ -1,0 +1,8 @@
+handle: bs-hero-left
+name: offline.bootstrapboxes::lang.hero.left
+section: offline.bootstrapboxes::lang.hero.section
+form:
+    tabs:
+        fields:
+            bs-hero-mixin:
+                type: mixin

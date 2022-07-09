@@ -1,0 +1,23 @@
+handle: bs-feature-cards
+name: offline.bootstrapboxes::lang.feature.cards
+section: offline.bootstrapboxes::lang.feature.section
+form:
+    tabs:
+        fields:
+            features:
+                label: offline.bootstrapboxes::lang.feature.features
+                type: repeater
+                tab: offline.bootstrapboxes::lang.content
+                itemsExpanded: false
+                titleFrom: title
+                form:
+                    fields:
+                        title:
+                            label: offline.bootstrapboxes::lang.title
+                            type: text
+                        image:
+                            label: offline.bootstrapboxes::lang.image
+                            type: mediafinder
+                        image_width:
+                            label: offline.bootstrapboxes::lang.image_width
+                            type: text

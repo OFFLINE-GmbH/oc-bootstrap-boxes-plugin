@@ -1,0 +1,8 @@
+handle: bs-feature-hanging-icon
+name: offline.bootstrapboxes::lang.feature.hanging_icon
+section: offline.bootstrapboxes::lang.feature.section
+form:
+    tabs:
+        fields:
+            bs-feature-mixin:
+                type: mixin

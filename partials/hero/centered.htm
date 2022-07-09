@@ -1,0 +1,54 @@
+<div class="px-4 py-5 my-5 text-center">
+    {% if box.logo %}
+        {% set logo_height = box.logo_height | default(75) %}
+        <img
+            class="d-block mx-auto mb-4"
+            src="{{ box.logo.thumb(auto, logo_height) }}"
+            height="{{ logo_height }}"
+            alt=""
+        >
+    {% endif %}
+    <h1 class="display-5 fw-bold">
+        {{ box.title | default('offline.bootstrapboxes::lang.title' | trans) }}
+    </h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+            {{ box.text | default('offline.bootstrapboxes::lang.text' | trans) | nl2br }}
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            {% if box.primary_button_text %}
+                <a
+                    href="{{ box.primary_button_href }}"
+                    type="button"
+                    class="btn btn-primary btn-lg px-4 gap-3"
+                >
+                    {{ box.primary_button_text }}
+                </a>
+            {% endif %}
+            {% if box.secondary_button_text %}
+                <a
+                    href="{{ box.secondary_button_href }}"
+                    type="button"
+                    class="btn btn-outline-secondary btn-lg px-4"
+                >
+                    {{ box.secondary_button_text }}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if box.image %}
+        {% set image_width = box.image_width | default(700) %}
+        <div class="mt-5 overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5">
+                <img
+                    src="{{ box.image.thumb(image_width, auto) }}"
+                    class="img-fluid mx-auto border rounded-3 shadow-lg mb-4"
+                    alt="{{ box.image.title }}"
+                    loading="lazy"
+                    width="{{ image_width }}"
+                >
+            </div>
+        </div>
+    {% endif %}
+</div>

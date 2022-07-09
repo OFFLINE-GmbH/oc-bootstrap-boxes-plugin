@@ -1,0 +1,28 @@
+handle: bs-feature-mixin
+mixin:
+    features:
+        label: offline.bootstrapboxes::lang.feature.features
+        type: repeater
+        tab: offline.bootstrapboxes::lang.content
+        itemsExpanded: false
+        titleFrom: title
+        maxItems: 3
+        form:
+            fields:
+                icon_name:
+                    label: offline.bootstrapboxes::lang.icon
+                    type: dropdown
+                title:
+                    label: offline.bootstrapboxes::lang.title
+                    type: text
+                text:
+                    label: offline.bootstrapboxes::lang.text
+                    type: textarea
+                    size: small
+                cta_text:
+                    label: offline.bootstrapboxes::lang.cta_text
+                    type: text
+                cta_href:
+                    label: offline.bootstrapboxes::lang.cta_href
+                    type: text
+

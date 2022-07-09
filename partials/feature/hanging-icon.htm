@@ -1,0 +1,24 @@
+<div class="container px-4 py-5">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        {% for feature in box.features|default([{}]) %}
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="bi-{{ feature.icon_name | default('collection') }}"></i>
+                </div>
+                <div>
+                    <h2>
+                        {{ feature.title | default('offline.bootstrapboxes::lang.title' | trans) }}
+                    </h2>
+                    <p>
+                        {{ feature.text | default('offline.bootstrapboxes::lang.text' | trans) | nl2br }}
+                    </p>
+                    {% if feature.cta_text %}
+                        <a href="{{ feature.cta_href }}" class="btn btn-primary">
+                            {{ feature.cta_text }}
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

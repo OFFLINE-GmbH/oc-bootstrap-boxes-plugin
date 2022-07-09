@@ -1,0 +1,19 @@
+<div class="container px-4 py-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        {% for feature in box.features|default({}) %}
+            <div class="col d-flex align-items-start">
+                <div class="text-muted flex-shrink-0 me-3">
+                    <i class="fs-1 lh-0 bi-{{ feature.icon_name }}"></i>
+                </div>
+                <div>
+                    <h4 class="fw-bold mb-0">
+                        {{ feature.title | default('offline.bootstrapboxes::lang.title' | trans) }}
+                    </h4>
+                    <p>
+                        {{ feature.text | default('offline.bootstrapboxes::lang.text' | trans) | nl2br }}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

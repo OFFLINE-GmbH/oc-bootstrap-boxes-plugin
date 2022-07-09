@@ -1,0 +1,36 @@
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            {% if box.image %}
+                {% set image_width = box.image_width | default(700) %}
+                <img
+                    src="{{ box.image.thumb(image_width, auto) }}"
+                    alt="{{ box.image.title }}"
+                    width="{{ image_width }}"
+                    class="d-block mx-lg-auto img-fluid"
+                    loading="lazy"
+                >
+            {% endif %}
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+                {{ box.title }}
+            </h1>
+            <p class="lead">
+                {{ box.text | nl2br }}
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                {% if box.primary_button_text %}
+                    <a href="{{ box.primary_button_href }}" class="btn btn-primary btn-lg px-4 me-md-2">
+                        {{ box.primary_button_text }}
+                    </a>
+                {% endif %}
+                {% if box.secondary_button_text %}
+                    <a href="{{ box.secondary_button_href }}" class="btn btn-outline-secondary btn-lg px-4">
+                        {{ box.secondary_button_text }}
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

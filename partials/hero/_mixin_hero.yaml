@@ -1,0 +1,40 @@
+handle: bs-hero-mixin
+mixin:
+    title:
+        label: offline.bootstrapboxes::lang.title
+        type: text
+        tab: offline.bootstrapboxes::lang.content
+    text:
+        label: offline.bootstrapboxes::lang.text
+        type: textarea
+        size: large
+        tab: offline.bootstrapboxes::lang.content
+    image:
+        label: offline.bootstrapboxes::lang.image
+        type: fileupload
+        mode: image
+        tab: offline.bootstrapboxes::lang.content
+    primary_button_text:
+        label: offline.bootstrapboxes::lang.primary_button_text
+        type: text
+        tab: offline.bootstrapboxes::lang.buttons
+    primary_button_href:
+        label: offline.bootstrapboxes::lang.primary_button_href
+        type: text
+        tab: offline.bootstrapboxes::lang.buttons
+    secondary_button_text:
+        label: offline.bootstrapboxes::lang.secondary_button_text
+        type: text
+        tab: offline.bootstrapboxes::lang.buttons
+    secondary_button_href:
+        label: offline.bootstrapboxes::lang.secondary_button_href
+        type: text
+        tab: offline.bootstrapboxes::lang.buttons
+    logo_height:
+        label: offline.bootstrapboxes::lang.logo_height
+        type: text
+        tab: offline.boxes::lang.sizes
+    image_width:
+        label: offline.bootstrapboxes::lang.image_width
+        type: text
+        tab: offline.boxes::lang.sizes
