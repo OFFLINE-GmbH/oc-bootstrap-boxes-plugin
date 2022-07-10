@@ -1,0 +1,34 @@
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">
+            {{ box.text | default('offline.bootstrapboxes::lang.text' | trans) }}
+        </p>
+
+        {% if box.logo %}
+            {% set logo_height = box.logo_height | default(75) %}
+            <a
+                href="{{ box.logo_href | default('#') }}"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+            >
+                <img
+                    class="me-2"
+                    src="{{ box.logo.thumb(auto, logo_height) }}"
+                    height="{{ logo_height }}"
+                    alt=""
+                >
+            </a>
+        {% endif %}
+
+        {% if box.links | length %}
+            <ul class="nav col-md-4 justify-content-end">
+                {% for link in box.links %}
+                    <li class="nav-item">
+                        <a href="{{ link.link_href }}" class="nav-link px-2 text-muted">
+                            {{ link.link_text }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </footer>
+</div>

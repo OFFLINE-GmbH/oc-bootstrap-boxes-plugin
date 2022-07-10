@@ -1,0 +1,16 @@
+handle: bs-logo-mixin
+mixin:
+    logo:
+        label: offline.bootstrapboxes::lang.logo
+        tab: offline.bootstrapboxes::lang.content
+        type: fileupload
+        mode: image
+    logo_href:
+        label: offline.bootstrapboxes::lang.logo_href
+        tab: offline.bootstrapboxes::lang.content
+        type: text
+    logo_height:
+        label: offline.bootstrapboxes::lang.logo_height
+        type: text
+        tab: offline.boxes::lang.sizes
+

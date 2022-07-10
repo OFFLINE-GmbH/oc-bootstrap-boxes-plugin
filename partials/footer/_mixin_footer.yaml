@@ -1,0 +1,8 @@
+handle: bs-footer-mixin
+mixin:
+    text:
+        label: offline.bootstrapboxes::lang.text
+        tab: offline.bootstrapboxes::lang.content
+        type: text
+    bs-links-mixin:
+        type: mixin

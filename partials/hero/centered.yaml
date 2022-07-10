@@ -4,10 +4,7 @@ section: offline.bootstrapboxes::lang.hero.section
 form:
     tabs:
         fields:
-            logo:
-                label: offline.bootstrapboxes::lang.logo
-                type: fileupload
-                mode: image
-                tab: offline.bootstrapboxes::lang.content
+            bs-logo-mixin:
+                type: mixin
             bs-hero-mixin:
                 type: mixin

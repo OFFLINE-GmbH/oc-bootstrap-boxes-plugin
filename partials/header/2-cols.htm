@@ -1,0 +1,33 @@
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+        {% set logo_height = box.logo_height | default(30) %}
+        <a
+            href="{{ box.logo_href | default('#') }}"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+            <img
+                class="me-2"
+                src="{{ box.logo.thumb(auto, logo_height) }}"
+                height="{{ logo_height }}"
+                alt=""
+            >
+            <span class="fs-4">
+                {{ box.title | default('offline.bootstrapboxes::lang.title' | trans) }}
+            </span>
+        </a>
+
+        {% if box.links | length %}
+            <ul class="nav nav-pills">
+                {% for link in box.links %}
+                    <li class="nav-item">
+                        <a
+                            href="{{ link.link_href }}"
+                            class="nav-link"
+                        >{{ link.link_text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </header>
+</div>

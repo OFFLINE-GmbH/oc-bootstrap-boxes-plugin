@@ -1,0 +1,53 @@
+handle: bs-pricing-3-cols
+name: offline.bootstrapboxes::lang.pricing.3_cols
+section: offline.bootstrapboxes::lang.pricing.section
+form:
+    tabs:
+        fields:
+            title:
+                label: offline.bootstrapboxes::lang.title
+                type: text
+                tab: offline.bootstrapboxes::lang.content
+            text:
+                label: offline.bootstrapboxes::lang.text
+                type: textarea
+                size: large
+                tab: offline.bootstrapboxes::lang.content
+            plans:
+                label: offline.bootstrapboxes::lang.pricing.plans
+                tab: offline.bootstrapboxes::lang.pricing.plans
+                type: repeater
+                itemsExpanded: false
+                titleFrom: title
+                form:
+                    fields:
+                        title:
+                            label: offline.bootstrapboxes::lang.title
+                            type: text
+                        text:
+                            label: offline.bootstrapboxes::lang.text
+                            type: textarea
+                            size: large
+                        price:
+                            label: offline.bootstrapboxes::lang.pricing.price
+                            type: text
+                        price_unit:
+                            label: offline.bootstrapboxes::lang.pricing.price_unit
+                            type: text
+                        cta_text:
+                            label: offline.bootstrapboxes::lang.cta_text
+                            type: text
+                        cta_href:
+                            label: offline.bootstrapboxes::lang.cta_href
+                            type: text
+                        style:
+                            label: offline.bootstrapboxes::lang.style
+                            type: dropdown
+                            options:
+                                default: offline.bootstrapboxes::lang.default
+                                primary: offline.bootstrapboxes::lang.primary
+                                secondary: offline.bootstrapboxes::lang.secondary
+
+
+
+

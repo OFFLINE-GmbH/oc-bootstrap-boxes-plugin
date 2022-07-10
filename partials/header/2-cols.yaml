@@ -1,0 +1,14 @@
+handle: bs-header-2-cols
+name: offline.bootstrapboxes::lang.header.2_cols
+section: offline.bootstrapboxes::lang.header.section
+form:
+    tabs:
+        fields:
+            title:
+                label: offline.bootstrapboxes::lang.title
+                type: text
+                tab: offline.bootstrapboxes::lang.content
+            bs-logo-mixin:
+                type: mixin
+            bs-links-mixin:
+                type: mixin

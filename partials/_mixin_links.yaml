@@ -1,0 +1,15 @@
+handle: bs-links-mixin
+mixin:
+    links:
+        label: offline.bootstrapboxes::lang.links
+        type: repeater
+        tab: offline.bootstrapboxes::lang.links
+        form:
+            fields:
+                link_text:
+                    label: offline.bootstrapboxes::lang.link_text
+                    type: text
+                link_href:
+                    label: offline.bootstrapboxes::lang.link_href
+                    type: text
+

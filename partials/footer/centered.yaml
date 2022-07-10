@@ -1,0 +1,8 @@
+handle: bs-footer-centered
+name: offline.bootstrapboxes::lang.footer.centered
+section: offline.bootstrapboxes::lang.footer.section
+form:
+    tabs:
+        fields:
+            bs-footer-mixin:
+                type: mixin

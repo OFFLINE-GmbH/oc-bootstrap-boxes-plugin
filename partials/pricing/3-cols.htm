@@ -1,0 +1,44 @@
+<section class="container py-3">
+    <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">
+                {{ box.title | default('offline.bootstrapboxes::lang.title' | trans) }}
+            </h1>
+            <p class="fs-5 text-muted">
+                {{ box.text | default('offline.bootstrapboxes::lang.text' | trans) | nl2br }}
+            </p>
+        </div>
+    </header>
+
+    {% if box.plans | length %}
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            {% for plan in box.plans %}
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm {{ plan.style == 'primary' ? 'border-primary' }}">
+                        <div class="card-header py-3 {{ plan.style == 'primary' ? 'text-white bg-primary border-primary' }}">
+                            <h4 class="my-0 fw-normal">
+                                {{ plan.title }}
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                {{ plan.price }}<small class="text-muted fw-light">/{{ plan.price_unit }}</small>
+                            </h1>
+                            <div class="mt-3 mb-4">
+                                {{ plan.text | nl2br }}
+                            </div>
+                            {% if plan.cta_text %}
+                                <a
+                                    href="{{ plan.cta_href }}"
+                                    class="w-100 btn btn-lg btn-{{ plan.style == 'default' ? 'outline-' }}primary"
+                                >
+                                    {{ plan.cta_text }}
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</section>

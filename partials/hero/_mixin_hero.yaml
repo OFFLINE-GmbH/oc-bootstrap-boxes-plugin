@@ -30,10 +30,6 @@ mixin:
         label: offline.bootstrapboxes::lang.secondary_button_href
         type: text
         tab: offline.bootstrapboxes::lang.buttons
-    logo_height:
-        label: offline.bootstrapboxes::lang.logo_height
-        type: text
-        tab: offline.boxes::lang.sizes
     image_width:
         label: offline.bootstrapboxes::lang.image_width
         type: text

@@ -1,0 +1,8 @@
+handle: bs-header-centered
+name: offline.bootstrapboxes::lang.header.centered
+section: offline.bootstrapboxes::lang.header.section
+form:
+    tabs:
+        fields:
+            bs-links-mixin:
+                type: mixin

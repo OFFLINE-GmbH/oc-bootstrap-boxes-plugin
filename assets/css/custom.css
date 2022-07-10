@@ -11,3 +11,8 @@
     border-radius: .75rem;
     line-height: 0;
 }
+
+.bg-image {
+    background-position: center;
+    background-size: cover;
+}

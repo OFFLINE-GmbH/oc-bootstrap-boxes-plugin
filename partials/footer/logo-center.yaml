@@ -1,0 +1,10 @@
+handle: bs-footer-logo-center
+name: offline.bootstrapboxes::lang.footer.logo_center
+section: offline.bootstrapboxes::lang.footer.section
+form:
+    tabs:
+        fields:
+            bs-footer-mixin:
+                type: mixin
+            bs-logo-mixin:
+                type: mixin

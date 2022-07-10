@@ -1,0 +1,18 @@
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        {% if box.links | length %}
+            <ul class="nav nav-pills">
+                {% for link in box.links %}
+                    <li class="nav-item">
+                        <a
+                            href="{{ link.link_href }}"
+                            class="nav-link"
+                        >
+                            {{ link.link_text }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </header>
+</div>

@@ -1,6 +1,5 @@
 <?php
 return [
-    'logo' => 'Logo',
     'title' => 'Title',
     'text' => 'Text',
     'content' => 'Content',
@@ -10,11 +9,20 @@ return [
     'primary_button_href' => 'Primary Button Link Target',
     'secondary_button_text' => 'Secondary Button Text',
     'secondary_button_href' => 'Secondary Button Link Target',
+    'logo' => 'Logo',
+    'logo_href' => 'Logo Link Target',
     'logo_height' => 'Logo Height (px)',
     'image' => 'Image',
     'image_width' => 'Image Width (px)',
     'cta_text' => 'CTA Text',
     'cta_href' => 'CTA Link Target',
+    'link_text' => 'Link Text',
+    'link_href' => 'Link Link Target',
+    'links' => 'Links',
+    'style' => 'Style',
+    'primary' => 'Primary',
+    'secondary' => 'Secondary',
+    'default' => 'Default',
     'hero' => [
         'section' => 'Hero',
         'centered' => 'Hero: Centered',
@@ -27,5 +35,22 @@ return [
         'hanging_icon' => 'Feature: Hanging Icon',
         'cards' => 'Feature: Cards',
         'icon_grid' => 'Feature: Icon Grid',
+    ],
+    'header' => [
+        'section' => 'Header',
+        '2_cols' => 'Header: Logo, Nav',
+        'centered' => 'Header: Centered',
+    ],
+    'footer' => [
+        'section' => 'Footer',
+        'logo_center' => 'Footer: Centered, Logo',
+        'centered' => 'Footer: Centered',
+    ],
+    'pricing' => [
+        'section' => 'Pricing Table',
+        '3_cols' => 'Three Columns',
+        'plans' => 'Plans',
+        'price' => 'Price',
+        'price_unit' => 'Unit',
     ]
 ];
