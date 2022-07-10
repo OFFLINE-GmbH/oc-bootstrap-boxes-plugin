@@ -1,0 +1,18 @@
+handle: bs-buttons-mixin
+mixin:
+    primary_button_text:
+        label: offline.bootstrapboxes::lang.primary_button_text
+        type: text
+        tab: offline.bootstrapboxes::lang.buttons
+    primary_button_href:
+        label: offline.bootstrapboxes::lang.primary_button_href
+        type: text
+        tab: offline.bootstrapboxes::lang.buttons
+    secondary_button_text:
+        label: offline.bootstrapboxes::lang.secondary_button_text
+        type: text
+        tab: offline.bootstrapboxes::lang.buttons
+    secondary_button_href:
+        label: offline.bootstrapboxes::lang.secondary_button_href
+        type: text
+        tab: offline.bootstrapboxes::lang.buttons

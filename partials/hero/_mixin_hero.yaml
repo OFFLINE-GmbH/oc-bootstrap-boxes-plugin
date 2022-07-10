@@ -14,23 +14,9 @@ mixin:
         type: fileupload
         mode: image
         tab: offline.bootstrapboxes::lang.content
-    primary_button_text:
-        label: offline.bootstrapboxes::lang.primary_button_text
-        type: text
-        tab: offline.bootstrapboxes::lang.buttons
-    primary_button_href:
-        label: offline.bootstrapboxes::lang.primary_button_href
-        type: text
-        tab: offline.bootstrapboxes::lang.buttons
-    secondary_button_text:
-        label: offline.bootstrapboxes::lang.secondary_button_text
-        type: text
-        tab: offline.bootstrapboxes::lang.buttons
-    secondary_button_href:
-        label: offline.bootstrapboxes::lang.secondary_button_href
-        type: text
-        tab: offline.bootstrapboxes::lang.buttons
     image_width:
         label: offline.bootstrapboxes::lang.image_width
         type: text
         tab: offline.boxes::lang.sizes
+    bs-buttons-mixin:
+        type: mixin

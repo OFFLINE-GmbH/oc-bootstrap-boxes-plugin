@@ -1,0 +1,12 @@
+handle: bs-header-3-cols
+name: offline.bootstrapboxes::lang.header.3_cols
+section: offline.bootstrapboxes::lang.header.section
+form:
+    tabs:
+        fields:
+            bs-logo-mixin:
+                type: mixin
+            bs-links-mixin:
+                type: mixin
+            bs-buttons-mixin:
+                type: mixin

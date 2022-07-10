@@ -39,6 +39,7 @@ return [
     'header' => [
         'section' => 'Header',
         '2_cols' => 'Header: Logo, Nav',
+        '3_cols' => 'Header: Logo, Nav, Actions',
         'centered' => 'Header: Centered',
     ],
     'footer' => [
