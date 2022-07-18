@@ -7,5 +7,5 @@ It provides ready-to-go Boxes based on [Bootstrap's examples](https://getbootstr
 
 ## Documentation
 
-You can find the documentation regard Third-Party-Plugins for OFFLINE.Boxes
-on the [Documentation website](https://docs.boxes.offline.ch/use-cases/third-party-boxes.html).
+You can find the documentation regarding Third-Party-Plugins for OFFLINE.Boxes
+on the [documentation website](https://docs.boxes.offline.ch/use-cases/third-party-boxes.html).
