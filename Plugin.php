@@ -23,32 +23,31 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'BootstrapBoxes',
+            'name' => 'BootstrapBoxes',
             'description' => 'No description provided yet...',
-            'author'      => 'OFFLINE',
-            'icon'        => 'icon-leaf'
+            'author' => 'OFFLINE',
+            'icon' => 'icon-leaf'
         ];
     }
 
     /**
      * Register method, called when the plugin is first registered.
      *
-     * @return void
+     * @return string[]
      */
     public function register()
     {
         Box::extend(function (Box $box) {
             $box->attachOne['logo'] = File::class;
-            $box->addDynamicMethod('getIconNameOptions', function() {
+            $box->addDynamicMethod('getIconNameOptions', function () {
                 return include('icons.php');
             });
         });
 
-        Event::listen(Events::REGISTER_PARTIAL_PATH, function () {
-            return [
-                '$/plugins/offline/bootstrapboxes/partials',
-            ];
-        });
+        Event::listen(
+            \OFFLINE\Boxes\Classes\Events::REGISTER_PARTIAL_PATH,
+            fn () => ['$/plugins/offline/bootstrapboxes/partials']
+        );
 
         Event::listen('cms.page.init', function (Controller $controller) {
             $controller->addJs('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', [
