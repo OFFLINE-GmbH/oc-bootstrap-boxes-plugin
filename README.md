@@ -1,7 +1,7 @@
 # Bootstrap Boxes Plugin
 
 This plugin is an example implementation of a plugin for the
-[OFFLINE.Boxes Plugin](https://boxes.offline.ch).
+[OFFLINE.Boxes plugin](https://boxes.offline.ch).
 
 It provides ready-to-go Boxes based on [Bootstrap's examples](https://getbootstrap.com/docs/5.2/examples/).
 
